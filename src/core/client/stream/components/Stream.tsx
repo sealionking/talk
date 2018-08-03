@@ -23,6 +23,9 @@ const Stream: StatelessComponent<StreamProps> = props => {
   return (
     <div className={styles.root}>
       <Logo gutterBottom />
+      <div>
+        You are not currently signed in. <a>Sign In</a>
+      </div>
       <PostCommentFormContainer assetID={props.assetID} />
       <Flex
         direction="column"
