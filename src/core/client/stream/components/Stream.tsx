@@ -12,11 +12,11 @@ import * as styles from "./Stream.css";
 
 export interface StreamProps {
   assetID: string;
-  isClosed: boolean;
+  isClosed?: boolean;
   comments: ReadonlyArray<{ id: string }>;
-  onLoadMore: () => void;
-  hasMore: boolean;
-  disableLoadMore: boolean;
+  onLoadMore?: () => void;
+  hasMore?: boolean;
+  disableLoadMore?: boolean;
 }
 
 const Stream: StatelessComponent<StreamProps> = props => {

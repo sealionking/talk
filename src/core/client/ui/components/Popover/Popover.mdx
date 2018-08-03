@@ -1,0 +1,48 @@
+---
+name: Popover
+menu: UI Kit
+---
+
+import { Playground, PropsTable } from 'docz'
+import Popover from './Popover'
+import Button from '../Button'
+import Typography from '../Typography'
+import ButtonIcon from '../Button/ButtonIcon'
+
+# Popover
+
+`Popover` uses `react-popper` that has `Popper.js` behind.
+
+## Basic usage
+<Playground>
+  <Popover
+    body={<div><Typography>This is the body</Typography></div>}
+  >
+    {({ toggleVisibility, forwardRef }) => (
+      <Button onClick={toggleVisibility} forwardRef={forwardRef} variant="filled" color="primary">
+        Click me!
+      </Button>
+    )}
+  </Popover>
+</Playground>
+
+#### Example with `placement=top`
+<Playground>
+  <Popover
+    placement="top"
+    body={({ toggleVisibility, forwardRef }) => (
+      <div>
+        <Button onClick={toggleVisibility} variant="filled" size="small">
+          <ButtonIcon>close</ButtonIcon>
+        </Button>
+        <Typography>This is the body</Typography>
+      </div>
+    )}
+  >
+    {({ toggleVisibility, forwardRef }) => (
+      <Button onClick={toggleVisibility} forwardRef={forwardRef} variant="filled" color="primary">
+        Click me!
+      </Button>
+    )}
+  </Popover>
+</Playground>
