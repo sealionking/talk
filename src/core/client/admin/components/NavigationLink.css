@@ -17,7 +17,7 @@
 }
 
 .active {
-  background-color: var(--palette-brand);
+  background-color: var(--palette-brand-main);
   text-decoration: none;
   color: var(--palette-text-light);
 }

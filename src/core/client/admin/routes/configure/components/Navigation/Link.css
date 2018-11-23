@@ -21,6 +21,6 @@
 
 .linkActive {
   margin-left: 0px;
-  border-left: calc(0.5 * var(--spacing-unit)) solid var(--palette-brand);
+  border-left: calc(0.5 * var(--spacing-unit)) solid var(--palette-brand-main);
   padding-left: var(--spacing-unit);
 }
