@@ -16,6 +16,10 @@ export const settings = {
         enabled: false,
         allowRegistration: true,
       },
+      oidc: {
+        enabled: false,
+        allowRegistration: true,
+      },
       sso: {
         enabled: false,
         allowRegistration: true,
@@ -24,7 +28,6 @@ export const settings = {
         enabled: true,
         allowRegistration: true,
       },
-      oidc: [],
     },
   },
   reaction: {
