@@ -15,7 +15,7 @@ export function getRequestedFields<T>(info: GraphQLResolveInfo) {
   return pull(Object.keys(graphqlFields<T>(info)), "__typename");
 }
 
-export function reconstructTenantURL<T = any>(path: string) {
+export function reconstructTenantURLResolver<T = any>(path: string) {
   return (parent: T, args: {}, ctx: TenantContext) => {
     // If the request is available, then prefer it over building from the tenant
     // as the tenant does not include the port number. This should only really
