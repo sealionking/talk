@@ -14,7 +14,6 @@ import {
   Flex,
   FormField,
   HorizontalGutter,
-  Icon,
   InputLabel,
   TextField,
   TextLink,
@@ -26,7 +25,6 @@ import ClientIDField from "./ClientIDField";
 import ClientSecretField from "./ClientSecretField";
 import ConfigBoxWithToggleField from "./ConfigBoxWithToggleField";
 import ConfigDescription from "./ConfigDescription";
-import styles from "./OIDCConfig.css";
 import RedirectField from "./RedirectField";
 import RegistrationField from "./RegistrationField";
 import TargetFilterField from "./TargetFilterField";
