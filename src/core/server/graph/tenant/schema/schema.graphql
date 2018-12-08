@@ -1268,6 +1268,11 @@ type Comment {
   story is the Story that the Comment was written on.
   """
   story: Story!
+
+  """
+  The permalink for this comment.
+  """
+  permalink: String!
 }
 
 type PageInfo {
